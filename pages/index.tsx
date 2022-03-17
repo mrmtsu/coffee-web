@@ -1,23 +1,13 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { Header } from "components/header";
+import { Footer } from "components/footer";
 
 const Home: NextPage = () => {
   return (
     <>
-      <header className="w-full h-20 fixed top-0 left-0 z-10">
-        <div className="flex content-between flex-wrap">
-          <div className="w-1/3 p-2">
-            <div className="text-white text-center  p-2">HOME</div>
-          </div>
-          <div className="w-1/3 p-2">
-            <div className="text-white text-center  p-2">LOGO</div>
-          </div>
-          <div className="w-1/3 p-2">
-            <div className="text-white text-center  p-2">MENU</div>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <div className="min-h-screen relative">
         <Image src="/top.jpg" layout="fill" />
@@ -83,7 +73,7 @@ const Home: NextPage = () => {
         </li>
       </ul>
 
-      <footer className="h-80 mt-10 bg-orange-400"></footer>
+      <Footer />
     </>
   );
 };
